@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <title>项目详情</title>
+    <link rel="stylesheet" type="text/css" href="../../webcss/project-detail.css"/>
+</head>
+<body>
+<div class="main">
+    <a href="../main-page.html">
+        <div class="logo">
+            <div class="left"><img src="../../image/school-logo.png" height="80"></div>
+            <div class="right"><img src="../../image/sugon-logo.png" height="40"></div>
+        </div>
+    </a>
+    <div class="choose">
+        <ul>
+            <li>
+                <a href="../project-list-a01.html">
+                    <p>应用开发</p>
+                </a>
+            </li>
+            <li>
+                <a href="../project-list-a02.html">
+                    <p>数据分析</p>
+                </a>
+            </li>
+            <li>
+                <a href="../project-list-a03.html">
+                    <p>机器学习</p>
+                </a>
+            </li>
+            <li>
+                <a href="../project-list-a04.html">
+                    <p>创新创业</p>
+                </a>
+            </li>
+            <li>
+                <a href="../project-list-a05.html">
+                    <p>比赛相关</p>
+                </a>
+            </li>
+            <li>
+                <a href="../project-list-a06.html">
+                    <p>荣誉展示</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="title">
+        《自动播报微型气象站》项目详情
+    </div>
+    <div class="content">
+        <div>
+            <strong>一、项目名称：</strong>
+            <p>&emsp;&emsp;自动播报微型气象站</p>
+        </div>
+        <div>
+            <strong>二、项目介绍：</strong>
+            <p>
+                &emsp;&emsp;本项目研究多功能型自动播报微型气象站。一款自主研发的高度融合的传感集成产品，拥有强大的编程代码，
+                实现对土壤温湿度，气温，气压，降雨量等的实时检测，且可以用语音方式输出，广泛应用于农业，校园，室内等领域。
+                相比于市场上的同类产品，我们的优势在于：我们的产品集多种功能为一体，实时精准播报，操作方便，便携。充分实现智慧农业。
+            </p>
+        </div>
+        <div>
+            <strong>三、项目成员：</strong>
+            <p>
+                &emsp;&emsp;钟雅诗：为项目总负责人，主要负责程序设计以及团队的协调工作；<br/>
+                &emsp;&emsp;陆媚、覃怡：负责项目的主要程序设计工作；<br/>
+                &emsp;&emsp;史恒瑜、平静雯：对c语言程序设计、计算机导论，财务管理等专业课程有很好的掌握，
+                    以及熟悉数据库的搭建与运用，能很好的运用到我们的产品研发中
+            </p>
+        </div>
+        <div>
+            <strong>四、微型气象站原理：</strong>
+            <p>
+                &emsp;&emsp;一种基于树莓派的气象数据收集及预报装置，包括一个数据处理节点和至少一个数据采集节点，
+                数据采集节点通过无线与数据处理节点相连；其中数据采集节点包括蓝色低功耗SoC模块及均与蓝色低功耗SoC模块相连的GPS模块、
+                电源模块、温湿度传感器模块、气压传感器模块和风力传感器模块；所述数据处理节点为树莓派单元。
+            </p>
+            <p>
+                &emsp;&emsp;所述GPS模块提供采集节点的地理位置信息。蓝色低功耗Soc模块和树莓派单元之间采用蓝色低功耗(BLE)协议进行通信。
+                温湿度传感器模块能实时监测环境温湿度，并输出信号蓝色低功耗Soc模块。气压传感器模块能实时监测环境气压大小，
+                并输出信号给蓝色低功耗Soc模块。风力传感器模块能实时检测风向和风力大小，并输出信号给蓝色低功耗Soc模块。
+                蓝色低功耗Soc模块采用nRF51822芯片。分别搭建MQTT服务器、实现Sqlite、实现INotifyPropertyChanged。
+            </p>
+            <p>
+                &emsp;&emsp;硬件连接图<br/>
+                &emsp;&emsp;<img src="../../image/a04/xm001/p001.png" style="width: 800px; height: 386px;"/> <br>
+                &emsp;&emsp;<img src="../../image/a04/xm001/p002.png" style="width: 800px; height: 386px;"/> <br>
+            </p>
+            <p>
+                &emsp;&emsp;烟雾气敏传感器<br/>
+                &emsp;&emsp;<img src="../../image/a04/xm001/p003.jpg" style="width: 800px; height: 386px;"/> <br>
+            </p>
+            <p>
+                &emsp;&emsp;土壤湿度传感器<br/>
+                &emsp;&emsp;<img src="../../image/a04/xm001/p004.jpg" style="width: 800px; height: 386px;"/> <br>
+            </p>
+            <p>
+                &emsp;&emsp;语音模块+麦克风<br/>
+                &emsp;&emsp;<img src="../../image/a04/xm001/p005.jpg" style="width: 800px; height: 386px;"/> <br>
+            </p>
+            <p>
+                &emsp;&emsp;扬声器和mp3模块<br/>
+                &emsp;&emsp;<img src="../../image/a04/xm001/p006.jpg" style="width: 800px; height: 386px;"/> <br>
+            </p>
+            <p>
+                &emsp;&emsp;雨滴模块<br/>
+                &emsp;&emsp;<img src="../../image/a04/xm001/p007.jpg" style="width: 800px; height: 386px;"/> <br>
+            </p>
+        </div>
+        <div>
+            <strong>五、部分主业务产品原理：</strong>
+            <p>
+                &emsp;&emsp;根据部分功能的需求，其传感器引脚图如下图所示：根据来自外界的各种信号转换成电信号。
+                通过电信号把信息传给树莓派，达到信息收集的目的。数据按照程序预设代码输出。
+            </p>
+            <p>
+                &emsp;&emsp;传感器引脚图<br/>
+                &emsp;&emsp;<img src="../../image/a04/xm001/p008.png" style="width: 800px; height: 386px;"/> <br>
+                &emsp;&emsp;<img src="../../image/a04/xm001/p009.png" style="width: 800px; height: 386px;"/> <br>
+            </p>
+        </div>
+        <div>
+            <strong>六、产品的所长：</strong>
+            <p>
+                &emsp;&emsp;根据部分功能的需求，其传感器引脚图如下图所示：根据来自外界的各种信号转换成电信号。
+                通过电信号把信息传给树莓派，达到信息收集的目的。数据按照程序预设代码输出。
+            </p>
+                &emsp;&emsp;1.基于气象信息分析的强大算法
+                设备所携带的功能需要适配的算法，我们通过前期上百次实验获得两万余组数据，采用一套较为精确的实时判定算法，
+                判定算法通过对环境数据收集进行实时分析，从而得到实时的气象信息。
+                &emsp;&emsp;2.实用便捷
+                基于加速度传感器的树莓派具有体积小、价格低、灵敏度高、功率低的特点，容易集成于小型设备中，
+                不论将其置于室内还是恶劣的外界环境中，均可实现气象信息的获取。
+                &emsp;&emsp;3.技术先进
+                通过物联网技术及先进算法增强对信息获取的效果。
+                &emsp;&emsp;4.应急服务前景广阔：
+                分钟数据的实时采集、储存，使其具有了人工站所不及的应急服务能力。
+                &emsp;&emsp;5.可观的开发潜力
+                我们后期将在树莓派40个IO接口上实现温室检测、气压传感、烟雾检测 等多项功能，使我们的产品功能更加完善
+        </div>
+    </div>
+</div>
+<footer></footer>
+</body>
+</html>

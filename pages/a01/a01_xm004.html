@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <title>项目详情</title>
+    <link rel="stylesheet" type="text/css" href="../../webcss/project-detail.css"/>
+</head>
+<body>
+<div class="main">
+    <a href="../main-page.html">
+        <div class="logo">
+            <div class="left"><img src="../../image/school-logo.png" height="80"></div>
+            <div class="right"><img src="../../image/sugon-logo.png" height="40"></div>
+        </div>
+    </a>
+    <div class="choose">
+        <ul>
+            <li>
+                <a href="../project-list-a01.html">
+                    <p>应用开发</p>
+                </a>
+            </li>
+            <li>
+                <a href="../project-list-a02.html">
+                    <p>数据分析</p>
+                </a>
+            </li>
+            <li>
+                <a href="../project-list-a03.html">
+                    <p>机器学习</p>
+                </a>
+            </li>
+            <li>
+                <a href="../project-list-a04.html">
+                    <p>创新创业</p>
+                </a>
+            </li>
+            <li>
+                <a href="../project-list-a05.html">
+                    <p>比赛相关</p>
+                </a>
+            </li>
+            <li>
+                <a href="../project-list-a06.html">
+                    <p>荣誉展示</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="title">
+        《Python小游戏 植物大战僵尸》项目详情
+    </div>
+    <div class="content">
+        <div>
+            <strong>一、项目名称：</strong>
+            <p>&emsp;&emsp;Python小游戏 植物大战僵尸</p>
+        </div>
+        <div>
+            <strong>二、项目成员：</strong>
+            <p>
+                &emsp;&emsp;小组成员：大数据174余崇富，大数据174张炜辉，大数据174刘科良<br/>
+                &emsp;&emsp;指导老师：刘兰华
+            </p>
+        </div>
+        <div>
+            <strong>三、游戏思路：</strong>
+            <p>
+                &emsp;&emsp;引入需要的模块，配置图片路径，设置界面宽高背景颜色，创建游戏主入口
+            </p>
+        </div>
+        <div>
+            <strong>四、主要代码块功能及效果展示：</strong>
+            <p>
+                <strong>1.游戏支持以下功能</strong><br/>
+                &emsp;&emsp;(1)支持太阳花，豌豆射手，寒冰射手，坚果，樱桃炸弹，双重豌豆射手，
+                三重豌豆射手，食人花 ，小喷菇，土豆地雷，倭瓜等植物类型。<br/>
+                &emsp;&emsp;(2)支持普通僵尸，棋子僵尸，路障僵尸，铁桶僵尸。,增加读报僵尸等僵尸类型。<br/>
+                &emsp;&emsp;(3)使用json文件保存关卡信息，可以设置僵尸出现的时间和位置。<br/>
+                &emsp;&emsp;(4)每关开始时可以选择上场植物。<br/>
+                &emsp;&emsp;(5)有除草机。
+            </p>
+            <p>
+                <strong>2.部分游戏截图</strong><br/>
+            <p>
+                &emsp;&emsp;(1)游戏界面的植物和僵尸<br/>
+                &emsp;&emsp;<img src="../../image/a01/xm004/p001.jpg" style="width: 800px; height: 386px;"/>
+            </p>
+            <p>
+                &emsp;&emsp;(2)关卡开始可以选择道具<br/>
+                &emsp;&emsp;<img src="../../image/a01/xm004/p002.jpg" style="width: 800px; height: 386px;"/>
+            </p>
+            <p>
+                &emsp;&emsp;(3)可以选择植物种植位置<br/>
+                &emsp;&emsp;<img src="../../image/a01/xm004/p003.jpg" style="width: 800px; height: 386px;"/>
+            </p>
+            </p>
+            <p>
+                <strong>3.关键代码说明</strong><br/>
+                &emsp;&emsp;(1) menubar.py，有植物各种信息，这个文件包含以下功能模块:<br/>
+                &emsp;&emsp;list列表，用于保存所有的植物卡片的名称和属性，每个植物用单独的list保存， 每个
+                list index都对应一种植物，其中card_name_list[0] 是太阳花卡片的名字，用 来获取太阳
+                花卡片的图片；plant_name_list[0] 是太阳花的名字，用来获取太阳花 卡片的图片；
+                plant_sun_list[0] 是种植太阳花需要花费的太阳点数；plant_frozen_time_list[0] 是太阳
+                花的冷却时间。<br/>
+                &emsp;&emsp;Card类，用于显示植物，每个植物卡片单独的类，这些类包含下面3个主要功能函数：
+                checkMouseClick函数，判断鼠标是否点击到这个卡片；canClick函数，判断这个卡片是否能种
+                植（有没有足够的点数，是否还在冷却时间内）；update 函数，通过设置图片的透明度来表示
+                这个卡片是否能选择。<br/>
+                &emsp;&emsp;MenuBar类，用来显示游戏界面中的植物卡片栏。主要有两个参数和两个功能函数：
+                self.sun_value：当前采集的太阳点数；self.card_list: 植物卡片的list；setupCards函数：
+                遍历初始化__init__函数中传入这个关卡选好的植物卡片list，依次创建Card类，设置每个卡
+                片的显示位置；checkCardClick函数：检查鼠标是否点击了卡片栏上的某个植物卡片，如果选
+                择了一个可种植的卡片，返回结果。 MenuBar类，用来显示游戏界面中的植物卡片栏。
+                主要有两个参数和两个功能函数：self.sun_value：当前采集的太阳点数；self.card_list:
+                植物卡片的list；setupCards函数：遍历初始化__init__函数中传入这个关卡选好的植物卡片list
+                ，依次创建Card类，设置每个卡片的显示位置；checkCardClick函数：检查鼠标是否点击了卡片栏
+                上的某个植物卡片，如果选择了一个可种植的卡片，返回结果。<br/>
+                &emsp;&emsp;(2) level.py，主要是setupMouseImage 函数，实现鼠标图片切换为选中的植物，函数关键参数如下：
+                self.mouse_image ：根据 plant_name 获取选中的植物图片；self.mouse_rect：选中植物图片的位置，
+                在drawMouseShow函数中，需要将植物图片的位置设置成当前鼠标的位置；pg.mouse.set_visible(False)：
+                隐藏默认的鼠标显示，这样效果就是鼠标图片切换为选中的植物了。此外这个文件还有canSeedPlant 函数
+                用来判断当前鼠标位置能否种植物，setupHintImage 函数，如果当前鼠标位置能种植物，且有选择了一个
+                植物卡片，则设置self.hint_image 显示当前会在哪一个方格中种植物，self.hint_rect 是植物种的坐标位置。<br/>
+                &emsp;&emsp;(3)	map.py中有map类，用来生成植物所在的方格，这个文件的主要参数和功能函数如下：self.map，二维list，
+                用来保存每个方格的状态。每个entry初始化为 0, 表示可以种植物，值为1时表示这个方格已经种了植物；getMapIndex 函数，
+                传入参数是游戏中的坐标位置（比如当前鼠标的位置），返回该位置在地图的哪个方格中；getMapGridPos 函数，传入一个方
+                格的index，返回在该方格中种植物的坐标位置；showPlant 函数，根据传入的坐标位置，判断该位置所在的方格是否能种植物，
+                如果能种，就返回返回在该方格中种植物的坐标位置。<br/>
+            </p>
+        </div>
+    </div>
+</div>
+<footer></footer>
+</body>
+</html>

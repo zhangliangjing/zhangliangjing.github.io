@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <title>项目详情</title>
+    <link rel="stylesheet" type="text/css" href="../../webcss/project-detail.css"/>
+</head>
+<body>
+<div class="main">
+    <a href="../main-page.html">
+        <div class="logo">
+            <div class="left"><img src="../../image/school-logo.png" height="80"></div>
+            <div class="right"><img src="../../image/sugon-logo.png" height="40"></div>
+        </div>
+    </a>
+    <div class="choose">
+        <ul>
+            <li>
+                <a href="../project-list-a01.html">
+                    <p>应用开发</p>
+                </a>
+            </li>
+            <li>
+                <a href="../project-list-a02.html">
+                    <p>数据分析</p>
+                </a>
+            </li>
+            <li>
+                <a href="../project-list-a03.html">
+                    <p>机器学习</p>
+                </a>
+            </li>
+            <li>
+                <a href="../project-list-a04.html">
+                    <p>创新创业</p>
+                </a>
+            </li>
+            <li>
+                <a href="../project-list-a05.html">
+                    <p>比赛相关</p>
+                </a>
+            </li>
+            <li>
+                <a href="../project-list-a06.html">
+                    <p>荣誉展示</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="title">
+        《大数据实时预警系统》项目详情
+    </div>
+    <div class="content">
+        <div>
+            <strong>一、项目介绍：</strong>
+            <p>&emsp;&emsp;示例: <a href="http://www.bjhcns.com/index.php?m=content&c=index&a=show&catid=3&id=92">http://www.bjhcns.com/index.php?m=content&c=index&a=show&catid=3&id=92</a></p>
+            <strong>1.应用：</strong>
+            <p>&emsp;&emsp;数据源在wifi数据时：</p>
+            <p>&emsp;&emsp;1) 网络泄密</p>
+            &emsp;&emsp;&emsp;通过邮件内容，传输文件内容，传输图像分析，红头文件分析等，搜索关键词
+            <p>&emsp;&emsp;2) 网络安全</p>
+            &emsp;&emsp;&emsp;木马网站规则分析，攻击流量统计分析，网站访问次数预警（一段时间内访问一个网站的频率）
+             <p>&emsp;&emsp;3) 刑事案件分析</p>
+            &emsp;&emsp;&emsp;涉黄，涉毒分析（通过统计浏览非法网站频率和时间 内容判断，包括搜索内容）
+             <p>&emsp;&emsp;4) 反恐分析</p>
+            &emsp;&emsp;&emsp;外籍人口聚集等
+             <p>&emsp;&emsp;5) 定位，抓捕</p>
+            &emsp;&emsp;&emsp;通过WIFI数据分析嫌疑人行动轨迹分析，轨迹伴随等
+            <p>&emsp;&emsp;数据源是日志文件或者后台数据时：</p>
+            <p>&emsp;&emsp;1)系统资源预警</p>
+            <p>&emsp;&emsp;2)日志实时搜索分析</p>
+            <strong>2.功能流程：</strong><br/>
+            &emsp;&emsp;&emsp;数据源通过采集到ftp集群(可选),由flume监控实时采集数据到kafka,在flume做了数据的预处理
+            (数据效验，错误数据转存es),由kafka对接es,hbase,redis,mysql,hive,存储在hive中做离线的
+            数据挖掘接口，在es中做全文索引，日志查询，并利用hbase做二级索引对es查询做了优化，mysql
+            和redis结合做实时预警，在mysql中添加相应的预警规则，由数据实时流入redis并与mysql的预警规则做对比。
+        </div>
+        <div>
+            <strong>二、系统架构：</strong>
+            <p>
+                &emsp;&emsp;<img src="../../image/a01/xm005/p001.png" style="width: 800px; height: 386px;"/>
+            </p>
+        </div>
+        <div>
+            <strong>三、Flume集群对接kafka集群：</strong>
+            <p>
+                &emsp;&emsp;<img src="../../image/a01/xm005/p002.png" style="width: 800px; height: 386px;"/><br>
+                &emsp;&emsp;<img src="../../image/a01/xm005/p003.png" style="width: 800px; height: 386px;"/>
+            </p>
+        </div>
+        <div>
+            <strong>四、es实时查询接口：</strong>
+            <p>
+                &emsp;&emsp;<img src="../../image/a01/xm005/p004.png" style="width: 800px; height: 386px;"/>
+            </p>
+        </div>
+    </div>
+</div>
+<footer></footer>
+</body>
+</html>
