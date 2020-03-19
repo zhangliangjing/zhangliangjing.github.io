@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.main a:hover {
+    text-decoration: none;
+    color: darkgreen;
+}
+
+.logo {
+    width: 100%;
+    height: 100px;
+    background: url(../image/top_bg_x.png) top repeat-x #ffffff;
+}
+
+.logo .left {
+    float: left;
+}
+
+.logo .right {
+    float: right;
+}
+
+.logo .left img {
+    margin-top: 5px;
+    margin-left: 100px;
+}
+
+.logo .right img {
+    margin-top: 30px;
+    margin-right: 100px;
+}
+.choose {
+    height: 50px;
+    width: 100%;
+    background-color: green;
+}
+
+.choose ul {
+    margin: 0;
+    width: 100%;
+}
+
+.choose li {
+    display: inline-block;
+    width: 16%;
+    height: 50px;
+}
+
+.choose li p {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+    font-weight: 400;
+}
+
+.choose li:hover {
+    background-color: seagreen;
+}
+
+.project {
+    height: 50px;
+    width: 1100px;
+    margin: 1px auto;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 50px;
+    background-color: seagreen;
+}
+
+.content {
+    margin: 0 auto;
+    width: 1100px;
+    height: auto;
+    background-color: #EFFFD7;
+}
+
+.first, .second, .third, .forth {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.first .left, .second .left, .third .left, .forth .left {
+    float: left;
+    height: 120px; /* 和html中的img的height一致 */
+    width: 290px;
+    margin-top: 20px;
+}
+
+.first .right, .second .right, .third .right, .forth .right {
+    float: right;
+    height: 120px;
+    width: 800px;
+    border-bottom: 1px solid gray;
+    margin-top: 20px;
+}
+
+.first .right h3, .second .right h3, .third .right h3, .forth .right h3 {
+    font-weight: 400;
+}
+
+.first .right span, .second .right span, .third .right span, .forth .right span {
+    font-size: 12px;
+    color: dimgrey;
+    margin-top: 5px;
+}
+
+.first .right p, .second .right p, .third .right p, .forth .right p {
+    font-size: 14px;
+    color: dimgrey;
+}
+
+/*footer {*/
+    /*margin-bottom: 0;*/
+    /*width:100%;*/
+    /*height:120px;*/
+    /*background: url(../image/bottom_bg_x.png) top repeat-x #ffffff;*/
+/*}*/

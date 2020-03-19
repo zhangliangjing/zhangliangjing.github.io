@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.main {
+    background-color: whitesmoke;
+}
+
+.main a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    width: 100%;
+    height: 100px;
+    background: url(../image/top_bg_x.png) top repeat-x #ffffff;
+}
+
+.logo .left {
+    float: left;
+}
+
+.logo .right {
+    float: right;
+}
+
+.logo .left img {
+    margin-top: 5px;
+    margin-left: 100px;
+}
+
+.logo .right img {
+    margin-top: 30px;
+    margin-right: 100px;
+}
+
+.choose {
+    height: 50px;
+    width: 100%;
+    background-color: green;
+}
+
+.choose ul {
+    margin: 0;
+    width: 100%;
+}
+
+.choose li {
+    display: inline-block;
+    width: 16%;
+    height: 50px;
+}
+
+.choose li p {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+    font-weight: 400;
+}
+
+.choose li:hover {
+    background-color: seagreen;
+}
+
+.roll {
+    width: 80%; /* 两张图片的宽度  600*2 */
+    border: 1px solid #000000;
+    margin: 1px auto;
+    overflow: hidden;
+}
+
+.roll ul {
+    list-style: none;
+    width: 3600px; /* 六张图片的宽度 600*6 */
+    height: 300px; /* 每张图片的高度 400*1 */
+}
+
+.roll ul > li {
+    float: left;
+    height: 300px; /* 设置一张图片的高度 */
+    width: 600px; /* 设置一张图片的宽度 */
+}
+
+.about {
+    height: 50px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: green;
+}
+
+.about .h2 {
+    width: 150px;
+    height: 50px;
+}
+
+.about h2 {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.introduction {
+    height: 467px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.introduction .left {
+    float: left;
+    height: 467px;
+    width: 42%;
+    background-color: #bce8f1;
+}
+
+.introduction .left h3 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.introduction .left p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.introduction .right {
+    float: left;
+    margin-left: 5px;
+    height: 467px;
+    width: 40%;
+}
+
+footer {
+    margin-bottom: 0;
+    width:100%;
+    height:120px;
+    background: url(../image/bottom_bg_x.png) top repeat-x #ffffff;
+}
